@@ -1,0 +1,123 @@
+﻿Γû▓ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+node.exe : Error: Cannot apply unknown 
+utility class `animate-gradient-flow`
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecifi 
+   ed: (Error: Cannot a...-gradient-flo  
+  w`:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeComm 
+   andError
+ 
+    [2m[at onInvalidCandidate 
+(C:\Users\Rohan Suradkar\OneDrive\Desktop
+\AT\notes-bookmark-manager\frontend\node_
+modules\tailwindcss\dist\lib.js:21:1511)]
+[0m
+    [2m[at Te (C:\Users\Rohan Suradkar\O
+neDrive\Desktop\AT\notes-bookmark-manager
+\frontend\node_modules\tailwindcss\dist\l
+ib.js:16:36652)][0m
+    [2m[at C:\Users\Rohan Suradkar\OneDr
+ive\Desktop\AT\notes-bookmark-manager\fro
+ntend\node_modules\tailwindcss\dist\lib.j
+s:21:355][0m
+    [2m[at Rr (C:\Users\Rohan Suradkar\O
+neDrive\Desktop\AT\notes-bookmark-manager
+\frontend\node_modules\tailwindcss\dist\l
+ib.js:3:1718)][0m
+    [2m[at _ (C:\Users\Rohan Suradkar\On
+eDrive\Desktop\AT\notes-bookmark-manager\
+frontend\node_modules\tailwindcss\dist\li
+b.js:3:1377)][0m
+    [2m[at $e (C:\Users\Rohan Suradkar\O
+neDrive\Desktop\AT\notes-bookmark-manager
+\frontend\node_modules\tailwindcss\dist\l
+ib.js:21:172)][0m
+    [2m[at un (C:\Users\Rohan Suradkar\O
+neDrive\Desktop\AT\notes-bookmark-manager
+\frontend\node_modules\tailwindcss\dist\l
+ib.js:38:294)][0m
+    [2m[at async cn (C:\Users\Rohan Sura
+dkar\OneDrive\Desktop\AT\notes-bookmark-m
+anager\frontend\node_modules\tailwindcss\
+dist\lib.js:38:631)][0m
+    [2m[at async Xr (C:\Users\Rohan Sura
+dkar\OneDrive\Desktop\AT\notes-bookmark-m
+anager\frontend\node_modules\@tailwindcss
+\node\dist\index.js:10:3417)][0m
+    [2m[at async I (C:\Users\Rohan Surad
+kar\OneDrive\Desktop\AT\notes-bookmark-ma
+nager\frontend\node_modules\@tailwindcss\
+postcss\dist\index.js:10:3977)][0m
+
+> Build error occurred
+Error: Turbopack build failed with 1 
+errors:
+./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: 
+C:\Users\Rohan Suradkar\OneDrive\Desktop\
+AT\notes-bookmark-manager\frontend\src\ap
+p\globals.css:1:1: Cannot apply unknown 
+utility class `animate-gradient-flow`
+    at Input.error (node_modules/postcss/
+lib/input.js:135:16) [C:\Users\Rohan Sura
+dkar\OneDrive\Desktop\AT\notes-bookmark-m
+anager\frontend\.next\build\chunks\node_m
+odules_fe693df6._.js:4651:22]
+    at Root.error (node_modules/postcss/l
+ib/node.js:146:32) [C:\Users\Rohan Suradk
+ar\OneDrive\Desktop\AT\notes-bookmark-man
+ager\frontend\.next\build\chunks\node_mod
+ules_fe693df6._.js:928:38]
+    [at Object.Once (C:\Users\Rohan Surad
+kar\OneDrive\Desktop\AT\notes-bookmark-ma
+nager\frontend\node_modules\@tailwindcss\
+postcss\dist\index.js:10:6911)]
+    at async LazyResult.runAsync (node_mo
+dules/postcss/lib/lazy-result.js:293:11) 
+[C:\Users\Rohan Suradkar\OneDrive\Desktop
+\AT\notes-bookmark-manager\frontend\.next
+\build\chunks\node_modules_fe693df6._.js:
+6206:21]
+    at async transform (turbopack:///[tur
+bopack-node]/transforms/postcss.ts:70:34)
+ [C:\Users\Rohan Suradkar\OneDrive\Deskto
+p\AT\notes-bookmark-manager\frontend\.nex
+t\build\chunks\[root-of-the-server]__5122
+5daf._.js:146:36]
+    at async run (turbopack:///[turbopack
+-node]/ipc/evaluate.ts:92:23) 
+[C:\Users\Rohan Suradkar\OneDrive\Desktop
+\AT\notes-bookmark-manager\frontend\.next
+\build\chunks\[root-of-the-server]__97494
+1ed._.js:443:31]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client 
+Component Browser]
+    ./src/app/layout.tsx [Server 
+Component]
+
+
+    at async transform (turbopack:///[tur
+bopack-node]/transforms/postcss.ts:70:34)
+ [C:\Users\Rohan Suradkar\OneDrive\Deskto
+p\AT\notes-bookmark-manager\frontend\.nex
+t\build\chunks\[root-of-the-server]__5122
+5daf._.js:146:36])
+    at async run (turbopack:///[turbopack
+-node]/ipc/evaluate.ts:92:23) 
+[C:\Users\Rohan Suradkar\OneDrive\Desktop
+\AT\notes-bookmark-manager\frontend\.next
+\build\chunks\[root-of-the-server]__97494
+1ed._.js:443:31])
+

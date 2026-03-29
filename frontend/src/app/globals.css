@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  --foreground-rgb: 248, 250, 252;
+  --background-start-rgb: 2, 6, 23;
+  --background-end-rgb: 0, 0, 0;
+
+  --primary: 139, 92, 246;
+  /* Violet 500 */
+  --secondary: 6, 182, 212;
+  /* Cyan 500 */
+  --accent: 245, 158, 11;
+  /* Amber 500 */
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+    color: rgb(var(--foreground-rgb));
+    background: radial-gradient(circle at 50% 0%, rgba(30, 41, 59, 0.4) 0%, rgba(2, 6, 23, 1) 100%);
+  }
+
+  body::selection {
+    @apply bg-violet-500/30 text-violet-200;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full hover:bg-slate-700 transition-colors;
+}
+
+/* Premium Glassmorphism */
+.glass-card {
+  @apply bg-slate-900/40 backdrop-blur-xl border border-white/10 shadow-2xl;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-card-hover {
+  @apply transition-all duration-500 hover:bg-slate-800/60 hover:border-white/20 hover:-translate-y-1;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-nav {
+  @apply bg-indigo-950/40 backdrop-blur-md border-b border-white/5;
+}
+
+/* Animated Gradient Text */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-cyan-400 to-violet-400;
+  background-size: 200% auto;
+  animation: gradient-flow 6s ease infinite;
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-flow {
+  animation: gradient-flow 6s ease infinite;
+}
+
+/* Premium Glow Effect */
+.glow-primary {
+  box-shadow: 0 0 20px -5px rgba(139, 92, 246, 0.5);
+}
+
+.glow-secondary {
+  box-shadow: 0 0 20px -5px rgba(6, 182, 212, 0.5);
+}
+
+/* Typography Enhancements */
+h1,
+h2,
+h3,
+h4 {
+  @apply tracking-tight font-bold;
+}
+
+/* Micro-animations */
+.hover-scale {
+  @apply transition-transform duration-300 hover:scale-[1.02] active:scale-[0.98];
+}
+
+/* Mobile Responsiveness Utilities */
+@layer utilities {
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
