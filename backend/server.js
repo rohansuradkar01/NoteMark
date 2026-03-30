@@ -16,12 +16,20 @@ const app = express();
 app.use(express.json());
 
 // Enable CORS
+// app.use(cors({
+//     origin: [
+//     "http://localhost:3000",
+//     "https://notemark-39mjged8e-rohansuradkar01s-projects.vercel.app"
+//   ],
+//     credentials: true
+// }));
+
 app.use(cors({
-    origin: [
-    "http://localhost:3000",
-    "https://notemark-39mjged8e-rohansuradkar01s-projects.vercel.app"
+  origin: [
+    "http://localhost:3000", // local
+    "https://notemark-gold.vercel.app" // your frontend
   ],
-    credentials: true
+  credentials: true
 }));
 
 // Route files
