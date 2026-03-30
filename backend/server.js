@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(cors({
   origin: [
     "http://localhost:3000", // local
-    "https://notemark-gold.vercel.app" // your frontend
+    "https://notemarkclient.onrender.com" // your frontend
   ],
   credentials: true
 }));
