@@ -30,7 +30,7 @@ const notesRoutes = require('./routes/notes');
 const bookmarksRoutes = require('./routes/bookmarks');
 
 // Mount routers
-app.use('/api/auth/register', authRoutes);
+app.use('/api/auth', authRoutes); 
 app.use('/api/notes', notesRoutes);
 app.use('/api/bookmarks', bookmarksRoutes);
 
