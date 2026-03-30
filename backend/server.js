@@ -32,18 +32,15 @@ app.use(cors({
   credentials: true
 }));
 
-// Body parser
-app.use(express.json());
+// Route files
+const authRoutes = require('./routes/auth');
+const notesRoutes = require('./routes/notes');
+const bookmarksRoutes = require('./routes/bookmarks');
 
 // Mount routers
 app.use('/api/auth', authRoutes); 
 app.use('/api/notes', notesRoutes);
 app.use('/api/bookmarks', bookmarksRoutes);
-
-// Route files
-const authRoutes = require('./routes/auth');
-const notesRoutes = require('./routes/notes');
-const bookmarksRoutes = require('./routes/bookmarks');
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
