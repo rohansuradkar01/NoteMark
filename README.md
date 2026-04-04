@@ -216,10 +216,3 @@ NEXT_PUBLIC_API_URL=http://localhost:5000/api
 
 ---
 
-## 📝 License
-
-MIT License - Feel free to use this project for learning or your own applications!
-
----
-
-Built with ❤️ using Next.js, Express, and MongoDB
